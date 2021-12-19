@@ -1,0 +1,123 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#navBar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100vw;
+}
+
+#navBar img {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+#navBar nav {
+  padding: 0px;
+  margin: 0px;
+}
+
+#navBar nav #burger {
+  position: absolute;
+  right: 41px;
+  top: 53px;
+  display: inline-block;
+}
+
+#navBar nav #burger span {
+  display: block;
+  width: 42px;
+  height: 5px;
+  margin-bottom: 5px;
+  background: #FCDD3F;
+  border-radius: 5px;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0px;
+          transform-origin: 4px 0px;
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#navBar nav #nav-items .nav-item {
+  font: normal normal 600 30px/40px Segoe UI;
+  letter-spacing: 0px;
+  color: #FCDD3F;
+  opacity: 1;
+  cursor: pointer;
+}
+
+#navBar nav #nav-items .nav-item:hover {
+  color: #87AABC;
+}
+
+@media screen and (max-width: 1020px) {
+  #navBar #nav-items {
+    visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    list-style: none;
+    padding-top: 100px;
+  }
+  #navBar #nav-items .nav-item {
+    text-align: center;
+  }
+  #navBar #nav-items.active {
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #navBar img {
+    position: absolute;
+    visibility: visible;
+    top: 34px;
+    left: 40.95px;
+    width: 51px;
+    height: 54px;
+    -webkit-filter: invert(64%) sepia(26%) saturate(344%) hue-rotate(156deg) brightness(100%) contrast(84%);
+            filter: invert(64%) sepia(26%) saturate(344%) hue-rotate(156deg) brightness(100%) contrast(84%);
+  }
+  #navBar #burger {
+    right: 50px;
+    top: 34px;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  #navBar #burger {
+    visibility: hidden;
+  }
+  #navBar #nav-items {
+    visibility: visible;
+    padding-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 66px;
+    padding-right: 114px;
+    border-bottom: 5px yellow solid;
+    margin-left: 1112px;
+  }
+  #navBar #nav-items .nav-item {
+    list-style: none;
+    padding-top: 60px;
+    padding-bottom: 38px;
+  }
+}
+
+.deletethis {
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+}
+/*# sourceMappingURL=style.css.map */
