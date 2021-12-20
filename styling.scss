@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.wrapper-sections {
+.wrapperSections {
 
   //Mobile view
   width: 428px;
@@ -24,7 +24,7 @@
     background: #F19E60;
   }
 
-  .section {
+  section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,8 +65,8 @@
       flex-direction: column;
       align-items: center;
 
-      #join,
-      #news {
+      #joinSpan,
+      #newsSpan {
         text-align: left;
         font-style: italic;
         font-family: 'Blue ocean';
@@ -79,7 +79,7 @@
       }
     }
 
-    #join {
+    #joinSpan {
       font-size: 45px;
       line-height: 78px;
       margin-top: 57px;
@@ -97,7 +97,7 @@
       }
     }
 
-    #news {
+    #newsSpan {
       margin-top: -1rem;
       font-size: 33px;
       line-height: 58px;
@@ -308,7 +308,7 @@
       }
     }
 
-    #svg-div {
+    .svg-div {
       text-align: center;
       margin: 17px auto 0 auto;
 
