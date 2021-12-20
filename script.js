@@ -1,5 +1,5 @@
 const BurgerEl = document.getElementById("burger");
-const NavItemsEl = document.getElementById("nav-items")
+const NavItemsEl = document.getElementById("navItems")
 
 function burgerToggle(){
     if(NavItemsEl.style.visibility == "hidden"){
