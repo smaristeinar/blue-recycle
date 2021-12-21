@@ -9,7 +9,7 @@ $medium: 768px;
     position: absolute; 
     left: 0; 
     right: 0; 
-    width: 100vw;
+    min-width: 428px;
     img{
         visibility: hidden;
         width: 0px;
@@ -73,6 +73,9 @@ $medium: 768px;
 
 
     @media screen and (min-width: $medium) {
+        #navBar{
+            width: 768px;
+        }
 
         .logoNav{
             position: absolute;
@@ -96,7 +99,11 @@ $medium: 768px;
             width: 129px;
             height: 138px;
         }
-        
+        .navItemsWrapper{
+            border-bottom: 5px #FCDD3F solid;
+            position: relative;
+            margin-left: 1112px;
+        }
         #navItems {
             visibility: visible;
             padding-top: 0px;
@@ -104,14 +111,15 @@ $medium: 768px;
             justify-content: flex-end;
             gap: 66px;
             padding-right: 114px;
-            border-bottom: 5px yellow solid;
-            margin-left: 1112px;
+            
+            
             
 
             .navItem{
                 list-style: none;
                 padding-top: 60px;
                 padding-bottom: 38px;
+                
             }
         }
     }

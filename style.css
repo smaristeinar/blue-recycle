@@ -7,7 +7,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  width: 100vw;
+  min-width: 428px;
 }
 
 #navBar img {
@@ -74,6 +74,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  #navBar #navBar {
+    width: 768px;
+  }
   #navBar .logoNav {
     position: absolute;
     visibility: visible;
@@ -98,6 +101,11 @@
     width: 129px;
     height: 138px;
   }
+  #navBar .navItemsWrapper {
+    border-bottom: 5px #FCDD3F solid;
+    position: relative;
+    margin-left: 1112px;
+  }
   #navBar #navItems {
     visibility: visible;
     padding-top: 0px;
@@ -109,8 +117,6 @@
             justify-content: flex-end;
     gap: 66px;
     padding-right: 114px;
-    border-bottom: 5px yellow solid;
-    margin-left: 1112px;
   }
   #navBar #navItems .navItem {
     list-style: none;
