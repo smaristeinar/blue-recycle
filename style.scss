@@ -99,10 +99,16 @@ $medium: 768px;
             width: 129px;
             height: 138px;
         }
-        .navItemsWrapper{
-            border-bottom: 5px #FCDD3F solid;
-            position: relative;
-            margin-left: 1112px;
+        #line{
+            span{
+                position: absolute;
+                top: 130px;
+                right: 0px;
+                width: 808px;
+                height: 5px;
+                background-color: #FCDD3F;
+
+            }
         }
         #navItems {
             visibility: visible;
