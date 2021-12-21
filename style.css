@@ -236,10 +236,44 @@ footer {
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1920px) {
   footer {
-    width: 1080px;
+    width: 1920px;
     height: 294px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 124px;
+    padding-bottom: 88px;
+    padding-top: 88px;
+  }
+  .socialMediaIcon {
+    width: 70px;
+    margin-right: 27px;
+  }
+  .footerNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footerNav li {
+    text-align: center;
+    font-size: 28px;
+    margin-right: 67px;
+  }
+  .footerNav :last-child {
+    margin-right: 0;
+  }
+  .footerLogoSoMe {
+    display: none;
+  }
+  .footerLogoWrapper {
+    display: inline;
+  }
+  .footerLogo {
+    width: 117px;
+    margin-left: 6px;
   }
 }
 /*# sourceMappingURL=style.css.map */
