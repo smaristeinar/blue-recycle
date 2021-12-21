@@ -103,13 +103,15 @@
     width: 129px;
     height: 138px;
   }
-  #navBar #line span {
+  #navBar .line span {
     position: absolute;
     top: 130px;
     right: 0px;
     width: 808px;
     height: 5px;
     background-color: #FCDD3F;
+    border-radius: 180px;
+    border: 5px solid #FCDD3F;
   }
   #navBar #navItems {
     visibility: visible;
