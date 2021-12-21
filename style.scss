@@ -135,6 +135,7 @@ $medium: 768px;
 
 footer {
     height: 353px;
+    width: 428px;
     background: #87AABC 0% 0% no-repeat padding-box;
     opacity: 1;
     padding: 47px 53px 81px 53px;
@@ -169,19 +170,58 @@ footer {
     }
 }
 
-.footerLogo {
+.footerLogoWrapper {
+    display: none;
+}
+
+.footerLogoSoMe {
     display: none;
 }
 
 @media screen and (min-width: 768px) {
     footer {
+        width: 768px;
         height: 223px;
+        flex-wrap: wrap-reverse;
+        padding-top: 36px;
+    }
+
+    .footerLogoSoMe {
+        display: inline;
+        width: 63px;
+        margin-bottom: 17px;
+    }
+
+    .socialMediaIcon {
+        width: 36px;
+        margin-right: 14px;
+        :last-child {
+            margin-right: 0;
+        }
+    }
+
+    .logoSoMeWrapper {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 28px;
+    }
+
+    .footerNav {
+        margin-top: 36px;
+        margin-bottom: 0;
+        li {
+            text-align: left;
+            font-size: 20px;
+            margin-bottom: 14px;
+        }
     }
 }
 
 @media screen and (min-width: 1080px) {
     footer {
+        width: 1080px;
         height: 294px;
     }
 }
