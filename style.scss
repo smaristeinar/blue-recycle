@@ -80,15 +80,18 @@ $medium: 768px;
         .logoNav{
             position: absolute;
             visibility: visible;
-            top: 34px;
-            left: 40.95px;
+            top: 31.5px;
+            left: 41px;
             width: 51px;
             height: 54px;
             filter: invert(64%) sepia(26%) saturate(344%) hue-rotate(156deg) brightness(100%) contrast(84%);
         }
         #burger{
-            right: 50px;
-            top: 34px;
+            top: 31.5px;
+            left: 683px;
+            width: 35px;
+            height: 27px;
+
         }
       }
     @media screen and (min-width: 1020px){
