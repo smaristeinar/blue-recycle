@@ -129,10 +129,10 @@ $medium: 768px;
   align-items: center;
   color: #fcdd3f;
   position: absolute;
-  top: 280px;
+  top: 220px;
   width: 100%;
-  h1 {
-    font-family: "BLUE OCEAN";
+  .blueRecycleHeading {
+    width: 80%;
   }
   .buttonContainer {
     display: flex;
@@ -140,22 +140,21 @@ $medium: 768px;
   }
   .shopBtn {
     width: 203px;
-    margin-top: 38px;
     margin-bottom: 21px;
     border-radius: 43px;
     height: 54px;
     background-color: #fcdd3f;
     border: none;
-    font-size: 22px;
-    font: normal normal 600 22px/30px Segoe UI;
+    font: normal normal bold 600 22px/30px Segoe UI;
+    font-size: 28px;
   }
   .recycleBtn {
     width: 203px;
     border: #fcdd3f 4px solid;
     border-radius: 43px;
     height: 54px;
-    font-size: 22px;
-    font: normal normal 600 22px/30px Segoe UI;
+    font: normal normal bold 600 22px/30px Segoe UI;
+    font-size: 28px;
     background-color: transparent;
     color: #fcdd3f;
   }
@@ -174,6 +173,9 @@ $medium: 768px;
     }
     .shopBtn {
       margin-right: 38px;
+    }
+    .blueRecycleHeading {
+      width: 50%;
     }
   }
 }
