@@ -13,23 +13,22 @@ $medium: 768px;
 
 
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 
-#navBar {  
-    position: absolute; 
-    left: 0; 
-    right: 0; 
+#navBar {
+    position: absolute;
+    left: 0;
+    right: 0;
     min-width: 428px;
-    img{
 
+    img {
         visibility: hidden;
         width: 0px;
         height: 0px;
-
     }
 
     nav {
@@ -43,241 +42,254 @@ $medium: 768px;
             display: inline-block;
 
 
-      span {
-        display: block;
-        width: 42px;
-        height: 5px;
-        margin-bottom: 5px;
-        background: #fcdd3f;
-        border-radius: 5px;
-        z-index: 1;
-        transform-origin: 4px 0px;
-        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-          background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-      }
-
-
-
-    #navItems {
-      .navItem {
-        font: normal normal 600 30px/40px Segoe UI;
-        letter-spacing: 0px;
-        color: #fcdd3f;
-        opacity: 1;
-        cursor: pointer;
-      }
-
-      .nav-item:hover {
-        color: #87aabc;
-      }
-    }
-
-
-    @media screen and (max-width: 1020px) {
-        #navItems {
-            visibility: hidden;
-            margin: 0px;
-            padding: 0px;
-            text-align: center;
-            list-style: none;
-            padding-top: 100px;
-
-            .nav-item {
-                text-align: center;
-            }
-        }
-
-        #navItems.active {
-            visibility: visible;
-        }
-
-    }
-  }
-
-  @media screen and (min-width: $medium) {
-    .logoNav {
-      position: absolute;
-      visibility: visible;
-      top: 34px;
-      left: 40.95px;
-      width: 51px;
-      height: 54px;
-      filter: invert(64%) sepia(26%) saturate(344%) hue-rotate(156deg)
-        brightness(100%) contrast(84%);
-    }
-    #burger {
-      right: 50px;
-      top: 34px;
-    }
-  }
-  @media screen and (min-width: 1020px) {
-    #burger {
-      visibility: hidden;
-    }
-    .logoNav {
-      width: 129px;
-      height: 138px;
-    }
-
-
-    #navItems {
-      visibility: visible;
-      padding-top: 0px;
-      display: flex;
-      justify-content: flex-end;
-      gap: 66px;
-      padding-right: 114px;
-      border-bottom: 5px yellow solid;
-      margin-left: 1112px;
-
-      .navItem {
-        list-style: none;
-        padding-top: 60px;
-        padding-bottom: 38px;
-      }
-
-
-    @media screen and (min-width: $medium) {
-        #navBar{
-            width: 768px;
-        }
-
-        .logoNav {
-            position: absolute;
-            visibility: visible;
-            top: 31.5px;
-            left: 41px;
-            width: 51px;
-            height: 54px;
-            filter: invert(64%) sepia(26%) saturate(344%) hue-rotate(156deg) brightness(100%) contrast(84%);
-        }
-
-        #burger{
-            top: 31.5px;
-            left: 683px;
-            width: 35px;
-            height: 27px;
-
-
-        }
-    }
-
-    @media screen and (min-width: 1020px) {
-        #burger {
-            visibility: hidden;
-        }
-
-        .logoNav {
-            width: 129px;
-            height: 138px;
-        }
-
-        .line{
-            span{
-                position: absolute;
-                top: 130px;
-                right: 0px;
-                width: 808px;
+            span {
+                display: block;
+                width: 42px;
                 height: 5px;
-                background-color: #FCDD3F;
-                border-radius: 180px;
-                border: 5px solid #FCDD3F;
+                margin-bottom: 5px;
+                background: #fcdd3f;
+                border-radius: 5px;
+                z-index: 1;
+                transform-origin: 4px 0px;
+                transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+                    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+            }
+
+
+
+            #navItems {
+                .navItem {
+                    font: normal normal 600 30px/40px Segoe UI;
+                    letter-spacing: 0px;
+                    color: #fcdd3f;
+                    opacity: 1;
+                    cursor: pointer;
+                }
+
+                .nav-item:hover {
+                    color: #87aabc;
+                }
+            }
+
+
+            @media screen and (max-width: 1020px) {
+                #navItems {
+                    visibility: hidden;
+                    margin: 0px;
+                    padding: 0px;
+                    text-align: center;
+                    list-style: none;
+                    padding-top: 100px;
+
+                    .nav-item {
+                        text-align: center;
+                    }
+                }
+
+                #navItems.active {
+                    visibility: visible;
+                }
 
             }
         }
 
-        #navItems {
-            visibility: visible;
-            padding-top: 0px;
-            display: flex;
-            justify-content: flex-end;
-            gap: 66px;
-            padding-right: 114px;
+        @media screen and (min-width: $medium) {
+            .logoNav {
+                position: absolute;
+                visibility: visible;
+                top: 34px;
+                left: 40.95px;
+                width: 51px;
+                height: 54px;
+                filter: invert(64%) sepia(26%) saturate(344%) hue-rotate(156deg) brightness(100%) contrast(84%);
+            }
 
-            border-bottom: 5px yellow solid;
-            margin-left: 1112px;
-
-
-
-            .navItem {
-                list-style: none;
-                padding-top: 60px;
-                padding-bottom: 38px;
-                
+            #burger {
+                right: 50px;
+                top: 34px;
             }
         }
 
+        @media screen and (min-width: 1020px) {
+            #burger {
+                visibility: hidden;
+            }
+
+            .logoNav {
+                width: 129px;
+                height: 138px;
+            }
+
+
+            #navItems {
+                visibility: visible;
+                padding-top: 0px;
+                display: flex;
+                justify-content: flex-end;
+                gap: 66px;
+                padding-right: 114px;
+                border-bottom: 5px yellow solid;
+                margin-left: 1112px;
+
+                .navItem {
+                    list-style: none;
+                    padding-top: 60px;
+                    padding-bottom: 38px;
+                }
+
+
+                @media screen and (min-width: $medium) {
+                    #navBar {
+                        width: 768px;
+                    }
+
+                    .logoNav {
+                        position: absolute;
+                        visibility: visible;
+                        top: 31.5px;
+                        left: 41px;
+                        width: 51px;
+                        height: 54px;
+                        filter: invert(64%) sepia(26%) saturate(344%) hue-rotate(156deg) brightness(100%) contrast(84%);
+                    }
+
+                    #burger {
+                        top: 31.5px;
+                        left: 683px;
+                        width: 35px;
+                        height: 27px;
+
+
+                    }
+                }
+
+                @media screen and (min-width: 1020px) {
+                    #burger {
+                        visibility: hidden;
+                    }
+
+                    .logoNav {
+                        width: 129px;
+                        height: 138px;
+                    }
+
+                    .line {
+                        span {
+                            position: absolute;
+                            top: 130px;
+                            right: 0px;
+                            width: 808px;
+                            height: 5px;
+                            background-color: #FCDD3F;
+                            border-radius: 180px;
+                            border: 5px solid #FCDD3F;
+
+                        }
+                    }
+
+                    #navItems {
+                        visibility: visible;
+                        padding-top: 0px;
+                        display: flex;
+                        justify-content: flex-end;
+                        gap: 66px;
+                        padding-right: 114px;
+
+                        border-bottom: 5px yellow solid;
+                        margin-left: 1112px;
+
+
+
+                        .navItem {
+                            list-style: none;
+                            padding-top: 60px;
+                            padding-bottom: 38px;
+
+                        }
+                    }
+
+                }
+            }
+        }
     }
-  }
 }
 
 .landingPage {
-  background-image: url("../img/jeans1.png");
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-image: url("../img/jeans1.png");
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
 .headingContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #fcdd3f;
-  position: absolute;
-  top: 220px;
-  width: 100%;
-  .blueRecycleHeading {
-    width: 80%;
-  }
-  .buttonContainer {
     display: flex;
     flex-direction: column;
-  }
-  .shopBtn {
-    width: 203px;
-    margin-bottom: 21px;
-    border-radius: 43px;
-    height: 54px;
-    background-color: #fcdd3f;
-    border: none;
-    font: normal normal bold 600 22px/30px Segoe UI;
-    font-size: 28px;
-  }
-  .recycleBtn {
-    width: 203px;
-    border: #fcdd3f 4px solid;
-    border-radius: 43px;
-    height: 54px;
-    font: normal normal bold 600 22px/30px Segoe UI;
-    font-size: 28px;
-    background-color: transparent;
+    align-items: center;
     color: #fcdd3f;
-  }
-  .shopBtn:hover {
-    background-color: #87aabc;
-  }
-  .recycleBtn:hover {
-    border-color: #87aabc;
-    color: #87aabc;
-  }
-
-  @media screen and (min-width: 1020px) {
-    .buttonContainer {
-      flex-direction: row;
-      align-items: baseline;
-    }
-    .shopBtn {
-      margin-right: 38px;
-    }
+    position: absolute;
+    top: 220px;
+    width: 100%;
 
     .blueRecycleHeading {
-      width: 50%;
+        width: 80%;
+    }
 
+    .buttonContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shopBtn {
+        width: 203px;
+        margin-bottom: 21px;
+        border-radius: 43px;
+        height: 54px;
+        background-color: #fcdd3f;
+        border: none;
+        font: normal normal bold 600 22px/30px Segoe UI;
+        font-size: 28px;
+    }
+
+    .recycleBtn {
+        width: 203px;
+        border: #fcdd3f 4px solid;
+        border-radius: 43px;
+        height: 54px;
+        font: normal normal bold 600 22px/30px Segoe UI;
+        font-size: 28px;
+        background-color: transparent;
+        color: #fcdd3f;
+    }
+
+    .shopBtn:hover {
+        background-color: #87aabc;
+    }
+
+    .recycleBtn:hover {
+        border-color: #87aabc;
+        color: #87aabc;
+    }
+
+    @media screen and (min-width: 1020px) {
+        .buttonContainer {
+            flex-direction: row;
+            align-items: baseline;
+        }
+
+        .shopBtn {
+            margin-right: 38px;
+        }
+
+        .blueRecycleHeading {
+            width: 50%;
+
+        }
+    }
 }
-    
+
 footer {
     height: 353px;
     width: 428px;
@@ -343,6 +355,7 @@ footer {
     .socialMediaIcon {
         width: 36px;
         margin-right: 14px;
+
         :last-child {
             margin-right: 0;
         }
@@ -359,6 +372,7 @@ footer {
     .footerNav {
         margin-top: 36px;
         margin-bottom: 0;
+
         li {
             text-align: left;
             font-size: 20px;
@@ -384,11 +398,13 @@ footer {
 
     .footerNav {
         display: flex;
+
         li {
             text-align: center;
             font-size: 28px;
             margin-right: 67px;
         }
+
         :last-child {
             margin-right: 0;
         }
@@ -676,4 +692,3 @@ footer {
         }
     }
 }
-
