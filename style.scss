@@ -15,7 +15,7 @@ $medium: 768px;
     font-weight: 700;
 }
 
-#navBar {  
+.navBar {  
     position: absolute; 
     left: 0; 
     right: 0; 
@@ -52,7 +52,7 @@ $medium: 768px;
 
         #navItems {
             .navItem {
-                font: normal normal 600 30px/40px Segoe UI;
+                font: normal normal 600 30px/40px "Segoe UI";
                 letter-spacing: 0px;
                 color: #FCDD3F;
                 opacity: 1;
@@ -83,7 +83,7 @@ $medium: 768px;
 
 
     @media screen and (min-width: $medium) {
-        #navBar{
+        .navBar{
             width: 768px;
         }
 
