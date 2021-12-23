@@ -1,19 +1,23 @@
 const BurgerEl = document.getElementById("burger");
-const NavItemsEl = document.getElementById("navItems")
+const NavItemsEl = document.getElementById("navItems");
+const cookieDiv = document.getElementById("cookieDiv");
+const cookieBtn = document.getElementById("cookieBtn");
 
-function burgerToggle(){
-    if(NavItemsEl.style.visibility == "hidden"){
-        NavItemsEl.style.visibility = "visible";
-    }
-    else{
-        NavItemsEl.style.visibility = "hidden";
-    } 
+function burgerToggle() {
+  if (NavItemsEl.style.visibility == "hidden") {
+    NavItemsEl.style.visibility = "visible";
+  } else {
+    NavItemsEl.style.visibility = "hidden";
+  }
 }
 
-BurgerEl.addEventListener("click", ()=>{    
-    NavItemsEl.classList.toggle("active")   
-})
+BurgerEl.addEventListener("click", () => {
+  NavItemsEl.classList.toggle("active");
+});
 
+cookieBtn.addEventListener("click", function () {
+  cookieDiv.remove();
+});
 
 /*function myFunction(x) {
     if (!x.matches) { // If media query matches
