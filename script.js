@@ -1,27 +1,27 @@
 const BurgerEl = document.getElementById("burger");
-const NavItemsEl = document.getElementById("navItems")
+const NavItemsEl = document.getElementById("navItems");
+const menuOpen = document.createElement("div");
+menuOpen.classList.add("menuOpen");
+const overlay = document.querySelector('#overlay');
+overlay.appendChild(menuOpen);
+const closeBtn = document.querySelector('#closeBtn');
 
-function burgerToggle(){
-    if(NavItemsEl.style.visibility == "hidden"){
+function burgerToggle() {
+    if (NavItemsEl.style.visibility == "hidden") {
         NavItemsEl.style.visibility = "visible";
     }
-    else{
+    else {
         NavItemsEl.style.visibility = "hidden";
-    } 
+    }
 }
 
-BurgerEl.addEventListener("click", ()=>{    
-    NavItemsEl.classList.toggle("active")   
+BurgerEl.addEventListener("click", () => {
+    overlay.style.display = "block";
+})
+
+closeBtn.addEventListener('click', () => {
+    overlay.style.display = "none";
 })
 
 
-/*function myFunction(x) {
-    if (!x.matches) { // If media query matches
-        NavItemsEl.style.visibility = "visible";
-        console.log(x);
-    } 
-  }
-  
-  var x = window.matchMedia("(max-width: 768px)")
-  myFunction(x) // Call listener function at run time
-  x.addListener(myFunction) // Attach listener function on state changes*/
+
