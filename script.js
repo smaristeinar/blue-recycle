@@ -17,13 +17,13 @@ closeBtn.addEventListener('click', () => {
 
 BurgerEl.addEventListener("focus",() =>{
     BurgerEl.addEventListener("keydown",(e)=>{
-        if(e.code == "Enter"){overlay.style.display = "block";}
+        if(e.code == "enter"){overlay.style.display = "block";}
     })
 })
 
 closeBtn.addEventListener("focus",() =>{
     closeBtn.addEventListener("keydown",(e)=>{
-        if(e.code == "Enter"){overlay.style.display = "none";}
+        if(e.code == "enter"){overlay.style.display = "none";}
     })
 })
 
