@@ -6,14 +6,6 @@ const overlay = document.querySelector('#overlay');
 overlay.appendChild(menuOpen);
 const closeBtn = document.querySelector('#closeBtn');
 
-function burgerToggle() {
-    if (NavItemsEl.style.visibility == "hidden") {
-        NavItemsEl.style.visibility = "visible";
-    }
-    else {
-        NavItemsEl.style.visibility = "hidden";
-    }
-}
 
 BurgerEl.addEventListener("click", () => {
     overlay.style.display = "block";
@@ -22,6 +14,19 @@ BurgerEl.addEventListener("click", () => {
 closeBtn.addEventListener('click', () => {
     overlay.style.display = "none";
 })
+
+BurgerEl.addEventListener("focus",() =>{
+    BurgerEl.addEventListener("keydown",(e)=>{
+        if(e.code == "enter"){overlay.style.display = "block";}
+    })
+})
+
+closeBtn.addEventListener("focus",() =>{
+    closeBtn.addEventListener("keydown",(e)=>{
+        if(e.code == "enter"){overlay.style.display = "none";}
+    })
+})
+
 
 
 

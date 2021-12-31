@@ -139,7 +139,7 @@ body {
 
         #navItems {
             visibility: hidden;
-
+           
             .navItem {
                 font: normal normal 600 30px/40px Segoe UI;
                 letter-spacing: 0px;
@@ -189,6 +189,12 @@ body {
         }
 
     }
+}
+
+.navLink, .navLink:hover, .navLink:focus, .navLink:active{
+        text-decoration: none;
+        color: inherit;
+
 }
 
 

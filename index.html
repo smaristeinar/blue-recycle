@@ -15,18 +15,29 @@
         <div id="navBar">
             <img class="logoNav" src="logga-cropped.svg" alt="logo of Blue Recycling">
             <nav>
-                <div id="burger">
+                <div id="burger" aria-label="Open navigation menu" role="button" tabindex="0">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
                 <ul id="navItems">
-                    <li class="navItem">Shop</li>
-                    <li class="navItem">Recycle denim</li>
-                    <li class="navItem">Contact us</li>
-                    <li class="navItem">FAQ</li>
+                    <li class="navItem"><a class="navLink" href="#">Shop</a></li>
+                    <li class="navItem"><a class="navLink" href="#">Recycle denim</a></li>
+                    <li class="navItem"><a class="navLink" href="#">Contact us</a></li>
+                    <li class="navItem"><a class="navLink" href="#">FAQ</a></li>
                 </ul>
             </nav>
+        </div>
+        <div id="overlay">
+            <div class="menuOpen">
+                <span id="closeBtn" aria-label="Close navigation menu" role="button" tabindex="0">&#10005;</span>
+                <ul id="menuNavItems">
+                    <li class="menuNavItem"><a class="navLink" href="#">Shop</a></li>
+                    <li class="menuNavItem"><a class="navLink" href="#">Recycle denim</a></li>
+                    <li class="menuNavItem"><a class="navLink" href="#">Contact us</a></li>
+                    <li class="menuNavItem"><a class="navLink" href="#">FAQ</a></li>
+                </ul>
+            </div>
         </div>
 
 
@@ -180,17 +191,7 @@
 
         <button id="cookieBtn">Accept</button>
     </div>
-    <div id="overlay">
-        <div class="menuOpen">
-            <span id='closeBtn'>&#10005;</span>
-            <ul id="menuNavItems">
-                <li class="menuNavItem">Shop</li>
-                <li class="menuNavItem">Recycle denim</li>
-                <li class="menuNavItem">Contact us</li>
-                <li class="menuNavItem">FAQ</li>
-            </ul>
-        </div>
-    </div>
+    
     <script src="script.js"></script>
 </body>
 
