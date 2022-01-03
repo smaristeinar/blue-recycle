@@ -23,7 +23,7 @@ BurgerEl.addEventListener("focus",() =>{
 
 closeBtn.addEventListener("focus",() =>{
     closeBtn.addEventListener("keydown",(e)=>{
-        if(e.code == "enter","Enter"){overlay.style.display = "none";}
+        if(e.code == "Enter","enter"){overlay.style.display = "none";}
     })
 })
 
