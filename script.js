@@ -17,7 +17,7 @@ closeBtn.addEventListener('click', () => {
 
 BurgerEl.addEventListener("focus",() =>{
     BurgerEl.addEventListener("keydown",(e)=>{
-        if(e.code == "enter"){overlay.style.display = "block";}
+        if(e.code == "Enter","enter"){overlay.style.display = "block";}
     })
 })
 
