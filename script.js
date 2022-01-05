@@ -2,16 +2,17 @@ const BurgerEl = document.getElementById("burger");
 const NavItemsEl = document.getElementById("navItems");
 const menuOpen = document.createElement("div");
 menuOpen.classList.add("menuOpen");
-const overlay = document.querySelector('#overlay');
+const overlay = document.querySelector("#overlay");
 overlay.appendChild(menuOpen);
-const closeBtn = document.querySelector('#closeBtn');
-
+const closeBtn = document.querySelector("#closeBtn");
+const cookieContainer = document.getElementById("cookieContainer");
+const cookieBtn = document.getElementById("cookieBtn");
 
 BurgerEl.addEventListener("click", () => {
     overlay.style.display = "block";
 })
 
-closeBtn.addEventListener('click', () => {
+closeBtn.addEventListener("click", () => {
     overlay.style.display = "none";
 })
 
@@ -27,6 +28,6 @@ closeBtn.addEventListener("focus",() =>{
     })
 })
 
-
-
-
+cookieBtn.addEventListener("click", function () {
+    cookieContainer.remove();
+  });
