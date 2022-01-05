@@ -9,29 +9,25 @@ const cookieContainer = document.getElementById("cookieContainer");
 const cookieBtn = document.getElementById("cookieBtn");
 
 BurgerEl.addEventListener("click", () => {
-  overlay.style.display = "block";
-});
+    overlay.style.display = "block";
+})
 
 closeBtn.addEventListener("click", () => {
-  overlay.style.display = "none";
-});
+    overlay.style.display = "none";
+})
 
-BurgerEl.addEventListener("focus", () => {
-  BurgerEl.addEventListener("keydown", (e) => {
-    if (e.code == "enter") {
-      overlay.style.display = "block";
-    }
-  });
-});
+BurgerEl.addEventListener("focus",() =>{
+    BurgerEl.addEventListener("keydown",(e)=>{
+        if(e.code == "Enter","enter"){overlay.style.display = "block";}
+    })
+})
 
-closeBtn.addEventListener("focus", () => {
-  closeBtn.addEventListener("keydown", (e) => {
-    if (e.code == "enter") {
-      overlay.style.display = "none";
-    }
-  });
-});
+closeBtn.addEventListener("focus",() =>{
+    closeBtn.addEventListener("keydown",(e)=>{
+        if(e.code == "Enter","enter"){overlay.style.display = "none";}
+    })
+})
 
 cookieBtn.addEventListener("click", function () {
-  cookieContainer.remove();
-});
+    cookieContainer.remove();
+  });
